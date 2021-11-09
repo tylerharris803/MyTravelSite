@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Title</title>
+    </head>
+    <body>
+        <p>The trip to {{trip_name}} will be {{trip_length}} days with airfare.</p>
+        <h4>Places to visit include:</h4>
+        <ul>
+            {% for sName in places_to_visit %} 
+            <li>{{ sName| upper }}</li>
+            {% endfor %}    
+        </ul>
+    </body>
+</html>     
